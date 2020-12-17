@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainWindowFragment"
+    android:background="#C3C3C3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rec_of_the_mount_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommendation_of_quartal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friends_frame">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_film1"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/loader"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:scaleType="fitXY"
+                    android:padding="1dp" />
+
+                <TextView
+                    android:id="@+id/year1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/title1"
+                    app:layout_constraintStart_toStartOf="@+id/title1"
+                    app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/img_film1"
+                    app:layout_constraintStart_toStartOf="@+id/img_film1"
+                    app:layout_constraintTop_toBottomOf="@+id/img_film1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/friends_frame">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_film2"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/loader"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:scaleType="fitXY"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:id="@+id/year2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/title2"
+                    app:layout_constraintStart_toStartOf="@+id/title2"
+                    app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/img_film2"
+                    app:layout_constraintStart_toStartOf="@+id/img_film2"
+                    app:layout_constraintTop_toBottomOf="@+id/img_film2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/friends_frame">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/img_film3"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/loader"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:scaleType="fitXY"
+                    android:padding="1dp" />
+
+                <TextView
+                    android:id="@+id/year3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textAlignment="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/img_film3"
+                    app:layout_constraintStart_toStartOf="@+id/img_film3"
+                    app:layout_constraintTop_toBottomOf="@+id/img_film3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/log_out"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:background="#C3C3C3"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/log_out"
+                android:scaleType="fitXY"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "499694574290",
+    "project_id": "horro-b506e",
+    "storage_bucket": "horro-b506e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499694574290:android:6856099ee3e9159ac72b0b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499694574290-99rt6ehfueqtdcgh5sibfpril4rkod95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "dd597642462df1f349e8f9082d67f9075e20ff5e"
+          }
+        },
+        {
+          "client_id": "499694574290-fr3r3qrhj3tvijgev611qs2f73r2u1ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi41qtxEKHYNiN7uSXvCjlTM45joFOKmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499694574290-fr3r3qrhj3tvijgev611qs2f73r2u1ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

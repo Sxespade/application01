@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C3C3C3"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/adviceThreeFilms"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/friends_frame">
+
+                <ImageView
+                    android:id="@+id/addFilm1"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/add_film"
+                    android:scaleType="fitXY"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/addFilm1"
+                    app:layout_constraintStart_toStartOf="@+id/addFilm1"
+                    app:layout_constraintTop_toBottomOf="@+id/addFilm1" />
+
+                <TextView
+                    android:id="@+id/year1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="@+id/title1"
+                    app:layout_constraintStart_toStartOf="@+id/title1"
+                    app:layout_constraintTop_toBottomOf="@+id/title1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friends_frame"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/addFilm2"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/add_film"
+                    android:scaleType="fitXY"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:id="@+id/year2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@+id/title2"
+                    app:layout_constraintStart_toStartOf="@+id/title2"
+                    app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@+id/addFilm2"
+                    app:layout_constraintStart_toStartOf="@+id/addFilm2"
+                    app:layout_constraintTop_toBottomOf="@+id/addFilm2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friends_frame"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/addFilm3"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/add_film"
+                    android:scaleType="fitXY"
+                    android:padding="1dp"/>
+
+                <TextView
+                    android:id="@+id/year3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@+id/title3"
+                    app:layout_constraintStart_toStartOf="@+id/title3"
+                    app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="@+id/addFilm3"
+                    app:layout_constraintStart_toStartOf="@+id/addFilm3"
+                    app:layout_constraintTop_toBottomOf="@+id/addFilm3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
